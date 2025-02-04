@@ -1,90 +1,97 @@
-Humidity sensor in plants
+# Humidity Sensor in Plants
 
-Description : 
+## Description 🌱💧
+
 Managing water resources in agriculture is challenging, with overwatering or underwatering leading to waste and reduced crop yields. The growing demand for continuous soil moisture monitoring highlights the need for a reliable sensor system. This solution provides real-time moisture data, helping farmers make informed irrigation decisions, improving efficiency, and reducing waste.
 
-Features
- A: Soil Moisture Measurement and Irrigation Control Users can 
-monitor soil moisture levels and automatically irrigate plants based on the detected 
-moisture level.
+## Features 🚀
 
-B: Soil Moisture Monitoring and Manual Irrigation Control 
-Users can monitor soil moisture levels and manually trigger irrigation based on the 
-system’s readings. 
-User Stories
+### A: Soil Moisture Measurement and Irrigation Control
 
+- Users can monitor soil moisture levels and automatically irrigate plants based on the detected moisture level.
 
-Requirements
-Hardware:
-Arduino:
-Soil Moisture Sensor (SMS):
-Rate relay: 
-Water Pump
-rrigation Pipes (Irrigation Pipes)
-Wiring
+### B: Soil Moisture Monitoring and Manual Irrigation Control
 
-Software:
-Arduino IDE (C++)
+- Users can monitor soil moisture levels and manually trigger irrigation based on the system’s readings.
 
+---
 
-How to Use
-Clone the repository
-رابط github
-Open the .ino file in Arduino IDE.
-Connect the hardware components based on the system diagram.
-Upload the code to the Arduino board
+## Requirements ⚙️
 
+### Hardware 🛠️
 
-How to User Flow 		
+- **Arduino Uno**
+- **Soil Moisture Sensor (SMS)**
+- **Relay Module**
+- **Water Pump**
+- **Irrigation Pipes**
+- **Wiring**
 
-1) Power On: The user powers on the Arduino-based irrigation system, which starts the initialization process.
+### Software 💻
 
+- **Arduino IDE (C++)**
 
-2) System Calibration: The system performs a self-check, verifying the sensors and relay connections.
+---
 
+## How to Use 🚀
 
+1. **Clone the repository:**
+   ```bash
+   git clone <https://github.com/S75MC/Humidity-measurement-system/blob/main/Build_a_auto_watering_system_for_plants_using_Arduino.inob>
+   ```
+2. **Open the .ino file in Arduino IDE.**
+3. **Connect the hardware components based on the system diagram.**
+4. **Upload the code to the Arduino board.**
 
-3) Moisture Level Monitoring: The soil moisture sensor continuously monitors the soil's moisture level and sends data to the Arduino.
+---
 
+## User Flow 🔄
 
-4) Threshold Check: The system compares the moisture level to a preset threshold.
-If the soil moisture is below the threshold (dry), the system triggers the relay to turn on the water pump.
-If the soil moisture is above the threshold (wet), the system keeps the pump off.
+1️⃣ **Power On:** The user powers on the Arduino-based irrigation system, which starts the initialization process.
 
-5) Irrigation: When the pump is activated, water is pumped through the irrigation pipes to the plants.
+2️⃣ **System Calibration:** The system performs a self-check, verifying the sensors and relay connections.
 
+3️⃣ **Moisture Level Monitoring:** The soil moisture sensor continuously monitors the soil's moisture level and sends data to the Arduino.
 
-6) Continuous Monitoring: The system continually checks the soil moisture and adjusts the pump's status as needed to maintain optimal moisture levels
+4️⃣ **Threshold Check:** The system compares the moisture level to a preset threshold:
 
+- If the soil moisture is **below the threshold (dry),** the system triggers the relay to turn on the water pump.
+- If the soil moisture is **above the threshold (wet),** the system keeps the pump off.
 
-System Design
-Soil Moisture Detection (Soil Moisture Detection) 🌱💧
+5️⃣ **Irrigation:** When the pump is activated, water is pumped through the irrigation pipes to the plants.
 
-Uses low soil moisture sensitivity.
+6️⃣ **Continuous Monitoring:** The system continually checks the soil moisture and adjusts the pump's status as needed to maintain optimal moisture levels.
 
-Sends sensitive data to the Arduino, which is analyzed to determine whether the soil is necessary for irrigation.
+---
 
-Water Pump Control (Pump Control) 🚰⚡
+## System Design 🏗️
 
-When the moisture level drops below the limit, the Arduino sends a signal to the relay module to turn on the pump and pump water.
+### 1️⃣ Soil Moisture Detection 🌱💧
 
-Once the moisture reaches the desired level, the pump is automatically stopped to command irrigation.
+- Uses low soil moisture sensitivity.
+- Sends data to the Arduino, which analyzes it to determine whether irrigation is needed.
 
-Display and Alerts (Display of data and alerts) 📟🔔
+### 2️⃣ Water Pump Control 🚰⚡
 
-The LCD screen can be used for the status and condition of the pump (on/off).
+- When moisture level drops below the limit, Arduino sends a signal to the relay module to activate the pump.
+- Once moisture reaches the desired level, the pump is stopped automatically.
 
-LED lights or alarm alert can be added to inform the user during the flow process or when the pump is turned on.
+### 3️⃣ Display and Alerts 📟🔔
 
-Power and Automation (Power and Printing) 🔋🤖
+- LCD screen can display the pump status (ON/OFF).
+- LED lights or alarms can be added to notify users when the pump is running.
 
-The system operates fully automatically without the need for human intervention.
-It can be powered by battery or external power source and the power is always on.
+### 4️⃣ Power and Automation 🔋🤖
 
+- Fully automated system requiring no human intervention.
+- Powered by a battery or external power source.
 
-Authors   
+---
 
-Lyan Majed Alharbi 
-Shatha Alkabkabi
-Ghala trad Alshreef
-Albisslan Ahmad
+## Authors ✍️
+
+- **Lyan Majed Alharbi**
+- **Shatha Alkabkabi**
+- **Ghala Trad Alshreef**
+- **Albisslan Ahmad**
+
